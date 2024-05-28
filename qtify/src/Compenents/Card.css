@@ -1,4 +1,4 @@
- .card-container {
+ /* .card-container {
     display: flex;
     justify-content: flex-start;
     background-color: black;
@@ -14,9 +14,9 @@
     width: 10rem;
     height: 12rem;
     color: white;
-}
+} */
 
-.card img{
+/* .card img{
     border-radius: 8px 8px 0 0;
     width: 10rem;
     height: 9rem;
@@ -47,7 +47,7 @@
     font-family: 'Poppins',sans-serif;
     display: flex;
     justify-content: flex-start;
-}
+} */
 
 .card-header {
     display: flex;

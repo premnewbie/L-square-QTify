@@ -1,5 +1,6 @@
 import './Card.css';
 import { useState, useEffect } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 const Card = ({cardData,type,showAll}) => {
@@ -35,19 +36,18 @@ const Card = ({cardData,type,showAll}) => {
                 <h3 id='show-collapse'>{showAllCards}</h3>
                 {type==='songs' &&<h3 id='show-collapse'>{showAllCards}</h3>}
             </div>
-            {showAll && <div className={containerName}>
-
-                    {cardData?.map((card)=>
-                    (<div className='card' key={card.id}>
+            {showAll && cardData?.map((card)=>(
+                <div class="swiper-slide">
+                    <div className='card' key={card.id}>
                         <img src={card.image} alt={card.title} />
                         <div className='card-content'>
                             <p>{type==='Songs'?card.likes:card.follows} {likesOrFollow}</p>
                         </div>                        
                         <p id='card-caption'>{card.title}</p>
                     </div>
-                    ))}    
-            </div>}
-            
+                </div>
+            ))}
+    
         </>
     )
 }
