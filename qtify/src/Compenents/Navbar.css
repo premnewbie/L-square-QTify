@@ -1,0 +1,18 @@
+.navbar {
+    background-color:  #34C94B;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between; 
+    Padding: 10px 16px 10px 16px; 
+}
+
+
+
+.navbarbutton {
+    background: black;
+    color: #34C94B;
+    height: 3rem;
+    width: 8rem;
+    border-radius: 8px;
+}

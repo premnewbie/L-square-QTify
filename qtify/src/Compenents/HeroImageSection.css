@@ -1,0 +1,16 @@
+.heroimagesection{
+    display: flex;
+    justify-content: center;
+}
+
+.herotext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 48px;
+}
