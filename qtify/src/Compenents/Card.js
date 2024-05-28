@@ -3,13 +3,6 @@ import { useState, useEffect } from 'react';
 
 
 const Card = ({cardData,type,showAll}) => {
-    var settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 6,
-        slidesToScroll: 1,
-      };
 
     const [showAllCards,setShowAllCards] = useState();
 
