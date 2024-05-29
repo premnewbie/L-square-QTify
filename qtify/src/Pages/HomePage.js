@@ -22,8 +22,8 @@ const HomePage = () => {
             <Navbar />
             <HeroImageSection />
             <Card cardData={topAlbums} type={'Top albums'} showAll={true}/>
-            {/* <Card cardData={newAlbums} type={'New albums'} showAll={true}/>
-            <Card cardData={songs} type={'Songs'}/> */}
+            <Card cardData={newAlbums} type={'New albums'} showAll={true}/>
+            <Card cardData={songs} type={'Songs'}/>
         </div>
     )
 }

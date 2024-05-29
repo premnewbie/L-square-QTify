@@ -1,10 +1,10 @@
- /* .card-container {
+ .card-container {
     display: flex;
     justify-content: flex-start;
     background-color: black;
     margin: 0rem 0rem 1rem 1rem;
     align-items: center;
-    gap: 0 50px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -12,11 +12,13 @@
     flex-direction: column;
     border-radius: 8px;
     width: 10rem;
-    height: 12rem;
-    color: white;
-} */
+    height: 15rem;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+} 
 
-/* .card img{
+.card img{
     border-radius: 8px 8px 0 0;
     width: 10rem;
     height: 9rem;
@@ -47,18 +49,38 @@
     font-family: 'Poppins',sans-serif;
     display: flex;
     justify-content: flex-start;
-} */
+}
 
-.card-header {
+.album-header {
     display: flex;
     justify-content: space-between;
     font-family: 'Poppins',sans-serif;
 }
 
+.song-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Poppins',sans-serif;
+}
+
 #show-collapse {
     color: #34C94B;
+    cursor: pointer;
 }
 
 #header-name {
     color: white;
+}
+
+.swiper-button-prev{
+    background-color: #34C94B;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.swiper-button-next{
+    background-color: #34C94B;
+    padding: 1rem;
+    border-radius: 50%;
 }

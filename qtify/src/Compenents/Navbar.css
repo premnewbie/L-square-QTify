@@ -18,6 +18,6 @@
     font-family: 'Poppins',sans-serif;
 }
 
-.navbar button:hover {
+.navbar button {
     cursor: pointer;
 }
