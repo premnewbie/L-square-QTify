@@ -55,7 +55,7 @@ const Card = ({cardData,type,showAll}) => {
                 "--swiper-navigation-color": "#fff",
                 "--swiper-navigation-size": "20px",
               }}
-            loop={true}
+            loop={false}
             className="mySwiper"
             >
                 {cardData?.map((card)=>

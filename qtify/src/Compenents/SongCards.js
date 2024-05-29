@@ -9,16 +9,14 @@ import Box from '@mui/material/Box';
 
 const SongCards =({cardData}) =>{
     const [filterData,setFilterData] = useState();
-    const [value, setValue] = useState('All');
+    const [value, setValue] = useState();
 
     useEffect(()=>{
         if(value!=='All'){
-            setFilterData(cardData.filter((card)=>card.genre.label===value))
-            console.log(filterData)
-            return
-        } else{
+            setFilterData(cardData?.filter((card)=>card.genre.label===value))
+        }
+        else{
             setFilterData(cardData)
-            console.log(filterData)
         }
     },[value])
 
@@ -51,11 +49,11 @@ const SongCards =({cardData}) =>{
                 "--swiper-navigation-color": "#fff",
                 "--swiper-navigation-size": "20px",
             }}
-            loop={true}
+            loop={false}
             className="mySwiper"
             >
                 {filterData?.map((card)=>
-                        <SwiperSlide>
+                    <SwiperSlide>
                         <div className='card' key={card.id}>
                             <img src={card.image} alt={card.title} />
                             <div className='card-content'>
@@ -63,8 +61,8 @@ const SongCards =({cardData}) =>{
                             </div>                        
                             <p id='card-caption'>{card.title}</p>
                         </div>
-                        </SwiperSlide>)
-                    }
+                    </SwiperSlide>)
+                }
             </Swiper>
         </>
     )
