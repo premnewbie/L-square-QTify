@@ -19,9 +19,9 @@ const Card = ({cardData,type,showAll}) => {
 
     useEffect(()=>{
         if(show){
-            setShowOrCollape('Collapse all')
+            setShowOrCollape('Collapse')
         }else{
-            setShowOrCollape('Show all')
+            setShowOrCollape('Show All')
         }
     },[show])
 
